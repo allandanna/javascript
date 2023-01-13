@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+       <title>Aprendendo Javascript</title>
+       <head>
+        <h1>Aprendendo Javascript</h1>
+
+    </section>
+    <section id="valor">
+        <h2>Notas</h2>
+        <button onclick="calculo()">Digite um valor</button>
+        <button onclick="calsucessorantecessor()">calcule o antecessor e o sucessor</button>
+        <button onclick="soma()">calcule a soma</button>
+
+            </section>
+
+    <script>
+        function calculaMedia() {
+            let nomeAluno = window.prompt( 'Qual o nome do aluno?' )
+            let nota1 = Number(window.prompt (`Qual foi a primeira nota de ${nomeAluno}`))
+            let nota2 = Number(window.prompt (`Qual a outra nota?`))
+            const media = (nota1 + nota2)/2
+
+            let resultado = window.document.getElementById(`situacaoNotas`);
+            resultado.innerHTML = `<p>Cálculo da média final de <strong> ${nomeAluno}</strong></p>`
+            resultado.innerHTML += `<p>As notas foram:<strong>${nota1} e ${nota2}</strong> </p>`
+            resultado.innerHTML += `<p>A média final será ${media}</p>`
+        }
+
+        function soma() {
+            const numero1 = Number(window.prompt(`Digite um numero:`))
+            const numero2 = Number(window.prompt(`Digite um outro numero:`))
+            const soma = (numero1 + numero2)
+            resultado.innerHTML = `Digite um valor: ${valor1}`
+            resultado.innerHTML += `<p>As notas foram:<strong>${nota1} e ${nota2}</strong> </p>`
+            resultado.innerHTML += `<p>A média final será ${media}</p>`
+         
+            
+        }
+
+        function calsucessorantecessor(){
+            const numero = Number(window.prompt("Qual o numero?"))
+            let resultado = window.document.getElementById(`situacaoNotas`);
+            resultado.innerHTML =`<p> O antecessor é ${numero-1}` 
+            resultado.innerHTML +=`<p> O sucessor é ${numero+1}`
+
+        }
+
+
+        
+
+    
+    </script>
+       </head>
